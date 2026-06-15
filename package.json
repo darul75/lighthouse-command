@@ -1,0 +1,16 @@
+{
+  "name": "lighthouse-command",
+  "version": "1.0.0",
+  "description": "OpenCode command + tool to run Lighthouse audits and auto-fix performance/accessibility issues",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lighthouse:audit": "bun run scripts/lighthouse-audit.ts",
+    "lighthouse:summary": "bun run scripts/lighthouse-summary.ts",
+    "lighthouse:all": "bun run scripts/lighthouse-audit.ts && bun run scripts/lighthouse-summary.ts"
+  },
+  "dependencies": {
+    "lighthouse": "^13",
+    "@opencode-ai/plugin": "^1"
+  }
+}
